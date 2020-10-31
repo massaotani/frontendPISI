@@ -1,7 +1,10 @@
-version: 2.1
-orbs:
-  node: circleci/node@3.0.0
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+machine:
+  node:
+    version: 0.10.26
+test:
+  pre:
+    - grunt jshint
+  override:
+    - grunt karma
+  post:
+    - grunt uglify
