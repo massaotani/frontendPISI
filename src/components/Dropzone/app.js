@@ -1,8 +1,4 @@
-import React from 'react';
-import Routes from './routes' 
-
-  return (
-    <div>
-      <Routes />
-    </div>
-);
+function sum(a, b) {
+  return a + b;
+}
+export default sum;

@@ -1,8 +1,5 @@
-import React from "react";
-import { shallow } from "enzyme";
-import App from "../src/components/Dropzone/app";
-describe("First React component test with Enzyme", () => {
-  it("renders without crashing", () => {
-    shallow(<App />);
-  });
+const sum = require('../src/components/Dropzone/app');
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
 });
