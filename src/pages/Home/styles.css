@@ -1,7 +1,8 @@
 #page-home {
-    height: 58vh;
-    background: url('https://image.cachorrogato.com.br/thumb/1200/630/1/imagens/original/imagem301.jpg') no-repeat 600px bottom;
-    /* background: url('../../assets/home-background.svg') no-repeat 600px bottom; */
+    height: 100vh;
+    /* background: url('/src/assets/artezananda.jpg') no-repeat right top; */
+    z-index: 0;
+    background-color: #abb672;
   }
   
   #page-home .content {
@@ -12,23 +13,24 @@
     padding: 0 30px;
   
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
   }
-  
-  #page-home .content header {
-    margin: 48px 0 0;
+  #page-home .content img {
+    height: inherit;
   }
   
   #page-home .content main {
     flex: 1;
-    max-width: 560px;
+    max-width: 610px;
+    background-color: #fdfff6;
+    padding: 40px;
   
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-  
+
   #page-home .content main h1 {
     font-size: 54px;
     color: var(--title-color);
@@ -38,7 +40,8 @@
     font-size: 24px;
     margin-top: 24px;
     line-height: 38px;
-    width: 400px;
+    width: 550px;
+    text-align: center;
   }
   
   #page-home .content main a {
@@ -84,7 +87,7 @@
   }
   
   #page-home .content main a:hover {
-    background: #5a5a5a;
+    background: #cf491c;
   }
   
   @media(max-width: 900px) {

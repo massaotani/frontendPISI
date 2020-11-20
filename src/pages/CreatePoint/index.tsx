@@ -254,7 +254,7 @@ const CreatePoint = () => {
         {/* ----- DADOS ----- */}
         <fieldset>
           <legend>
-            <h2>Dados do doador</h2>
+            <h2 className="dados">Dados do doador</h2>
           </legend>
 
           <div className="field">
@@ -295,7 +295,7 @@ const CreatePoint = () => {
         {/* ----- ENDEREÇO ----- */}
         <fieldset>
           <legend>
-            <h2>Endereço</h2>
+            <h2 className="endereco">Endereço</h2>
             <span>Selecione o endereço no mapa</span>
           </legend>
 
@@ -347,7 +347,7 @@ const CreatePoint = () => {
         {/* ----- ÍTENS DE DOAÇÃO (carregar da API) ----- */}
         <fieldset>
           <legend>
-            <h2>Ítens da doação</h2>
+            <h2 className="itens">Ítens da doação</h2>
             <span>Selecione um ou mais itens abaixo</span>
           </legend>
 

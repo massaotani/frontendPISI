@@ -1,8 +1,9 @@
 #page-create-point {
     width: 100%;
     max-width: 1100px;
-  
+    padding: 40px;
     margin: 0 auto;
+    background-color: #fdfff6;
   }
   
   #page-create-point header {
@@ -11,8 +12,78 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+  }
+
+  #page-create-point header:before {
+   content: "";
+   position: absolute;
+    width: 520px;
+    height: 450px;
+    transform: scale(0.17);
+    top: -269px;
+    z-index: 10;
+    left: -180px;
+   background-image:url('/src/assets/duck.svg');
+  }
+  #page-create-point header:after {
+   content: "";
+   position: absolute;
+    width: 520px;
+    height: 450px;
+    transform: scale(0.2);
+    top: -170px;
+    z-index: 10;
+    right: -40px;
+   background-image:url('/src/assets/fish.svg');
   }
   
+  #page-create-point form fieldset legend h2.dados:before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 450px;
+    transform: scale(0.14) rotateY(180deg);
+    top: 143px;
+    z-index: 440;
+    left: -105px;
+    background-image:url('/src/assets/chicken.svg');
+   }
+  #page-create-point form fieldset legend h2.dados:after {
+    content: "";
+    position: absolute;
+    width: 512px;
+    height: 450px;
+    transform: scale(0.14) rotateY(180deg);
+    top: 685px;
+    z-index: 10;
+    right: -226px;
+    background-image:url('/src/assets/dog.svg');
+   }
+
+  #page-create-point form fieldset legend h2.itens:after {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 450px;
+    transform: scale(0.2);
+    top: 276px;
+    z-index: 10;
+    right: 43px;
+    background-image:url('/src/assets/goat.svg');
+   }
+  #page-create-point form fieldset legend h2.endereco:after {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 450px;
+    transform: scale(0.2);
+    top: -479px;
+    z-index: 10;
+    right: -252px;
+    background-image:url('/src/assets/parrot.svg');
+   }
+
   #page-create-point header a {
     color: var(--title-color);
     font-weight: bold;
@@ -20,6 +91,7 @@
   
     display: flex;
     align-items: center;
+    
   }
   
   #page-create-point header a svg {
@@ -55,6 +127,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    position: relative;
   }
   
   #page-create-point form legend h2 {
@@ -160,10 +233,35 @@
     margin-top: 40px;
     transition: background-color 0.2s;
     cursor: pointer;
+    position: relative;
+  }
+
+  #page-create-point form button:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 13px;
+    z-index: 1;
+    left: -3px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  #page-create-point form button:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    z-index: 1;
+    left: -4px;
+    border-radius: 50%;
+    background-color: #ffffff;
   }
   
+  
   #page-create-point form button:hover {
-    background: #2FB86E;
+    background: #cf491c;
   }
   
   .items-grid {
@@ -200,6 +298,9 @@
   }
   
   .items-grid li.selected {
-    background: #E1FAEC;
-    border: 2px solid #34CB79;
+    background: #ffcfbf;
+    border: 2px solid #cf491c;
+  }
+  .items-grid li img {
+    width: 100px;
   }
