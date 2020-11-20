@@ -25,6 +25,7 @@ const Home = () => {
                     </Link>
                 </main>
                 <img src={artezananda} alt="Arte"/>
+                <span>Artista: Ananda Oda (@artezananda)</span>
             </div>
         </div>
     );

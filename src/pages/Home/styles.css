@@ -30,6 +30,12 @@
     justify-content: center;
     align-items: center;
   }
+  #page-home .content span {
+    font-style: italic;
+    padding: 16px;
+    font-size: 10px;
+    color: #cf491c;
+  }
 
   #page-home .content main h1 {
     font-size: 54px;
