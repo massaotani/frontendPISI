@@ -4,7 +4,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://backendpisi.herokuapp.com/' // a baseURL é o comum pras rotas, apenas preciso trocar aqui se mudar
+    baseURL: 'http://localhost:3333/' // a baseURL é o comum pras rotas, apenas preciso trocar aqui se mudar
 });
 
 export default api;

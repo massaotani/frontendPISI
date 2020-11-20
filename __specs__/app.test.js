@@ -1,5 +1,6 @@
-import sum from '../src/components/Dropzone/app';
+import checkItems from "../src/components/Dropzone/app";
 
-test('Point created successfully', () => {
-  expect(sum(1, 2)).toBe(3);
+test("All items are accessible!", () => {
+  const testResponse = "";
+  expect(checkItems(testResponse)).toBe(true);
 });

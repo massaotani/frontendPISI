@@ -107,7 +107,8 @@ const CreatePoint = () => {
 
   // --------------- BUSCAR OS ITENS DA API --------------
   useEffect(() => {
-    api.get("items").then((response) => {
+    console.log("Entrou")
+    api.get("/items").then((response) => {
       // (.then = promisse) e assim que eu tiver uma resposta, executo
       setItems(response.data);
     });
